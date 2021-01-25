@@ -42,4 +42,4 @@ jobs:
          context: $image_name
          dockerfile: $image_name/Dockerfile
          tags:
-           - ghcr.io/${{ github.repository_owner }}/$image_name:latest
+           - "ghcr.io/${{ github.repository_owner }}/$image_name:latest"
