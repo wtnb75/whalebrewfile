@@ -18,6 +18,8 @@ jobs:
         - sqlite3
     runs-on: ubuntu-latest
     steps:
+     - name: setup image name
+       run: echo "image_name=${{ matrix.images }}" >> $GITHUB_ENV
      - name: checkout
        uses: actions/checkout@v2
      - name: setup qemu
@@ -37,7 +39,7 @@ jobs:
          registry: ghcr.io
          platforms: ${{ steps.buildx.outputs.platforms }}
          push: true
-         context: ${{ matrix.images }}
-         dockerfile: ${{ matrix.images }}/Dockerfile
+         context: $image_name
+         dockerfile: $image_name/Dockerfile
          tags:
-           - ghcr.io/${{ github.repository_owner }}/${{ matrix.images }}:latest
+           - ghcr.io/${{ github.repository_owner }}/$image_name:latest
