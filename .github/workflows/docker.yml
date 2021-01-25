@@ -9,13 +9,15 @@ jobs:
     strategy:
       matrix:
         images:
-        #- calc
-        #- jhd
+        - calc
+        - jhd
         #- jupyter
-        #- kubebuilder
+        - kubebuilder
         - pdfcrop
-        #- randgen
-        #- sqlite3
+        - randgen
+        - sqlite3
+        - optipng
+        - zopflipng
     runs-on: ubuntu-latest
     steps:
      - name: checkout
