@@ -26,6 +26,8 @@ install docker and whalebrew
   - ghcr.io/wtnb75/grpcui
   - ghcr.io/wtnb75/grpc_cli
   - ghcr.io/wtnb75/lftp
+  - ghcr.io/wtnb75/ncftp
+  - ghcr.io/wtnb75/rsync
 - programming
   - ghcr.io/wtnb75/jupyter (Python)
 - misc.
