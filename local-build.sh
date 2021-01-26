@@ -3,6 +3,8 @@
 prefix=ghcr.io/wtnb75
 
 for i; do
-  docker build -t ${prefix}/$(dirname $i):latest $(dirname $i)
-  whalebrew install ${prefix}/$(dirname $i)
+  dn=${i}
+  [ -f ${dn} ] && dn=$(dirname $i)
+  docker build -t ${prefix}/${dn}:latest ${dn}
+  whalebrew install ${prefix}/${dn}
 done

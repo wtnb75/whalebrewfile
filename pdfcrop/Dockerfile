@@ -1,10 +1,10 @@
 FROM alpine:3 as dev
-ARG pdfcrop_ver=0.4b
-ADD https://jaist.dl.sourceforge.net/project/pdfcrop/pdfcrop/PDFCrop%20v${pdfcrop_ver}/pdfcrop_v${pdfcrop_ver}.tar.gz /
-RUN tar xfz pdfcrop_v${pdfcrop_ver}.tar.gz
-RUN cp pdfcrop_v${pdfcrop_ver}/pdfcrop /usr/local/bin/
+ARG pdfcrop_ver=1.40
+ADD https://github.com/ho-tex/pdfcrop/archive/v${pdfcrop_ver}.tar.gz /
+RUN tar xfz v${pdfcrop_ver}.tar.gz
+RUN cp pdfcrop-${pdfcrop_ver}/pdfcrop.pl /usr/local/bin/
 
 FROM alpine:3
 RUN apk add --no-cache perl bash
-COPY --from=dev /usr/local/bin/pdfcrop /usr/local/bin/
-ENTRYPOINT ["pdfcrop"]
+COPY --from=dev /usr/local/bin/pdfcrop.pl /usr/local/bin/
+ENTRYPOINT ["pdfcrop.pl"]
