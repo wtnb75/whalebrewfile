@@ -1,4 +1,4 @@
-name: docker image
+name: docker image (x64)
 
 on:
   push:
@@ -12,6 +12,7 @@ jobs:
         - kubebuilder
         - randgen
         - duckdb
+        # - jupyter-pyston
     runs-on: ubuntu-latest
     steps:
      - name: checkout

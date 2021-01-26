@@ -20,6 +20,7 @@ jobs:
         - grpc_cli
         - uuidgen_linux
         - lftp
+        - ncftp
     runs-on: ubuntu-latest
     steps:
      - name: checkout
