@@ -12,6 +12,7 @@ jobs:
         - kubebuilder
         - randgen
         - duckdb
+        - pandoc
         # - jupyter-pyston
     runs-on: ubuntu-latest
     steps:

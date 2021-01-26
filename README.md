@@ -38,3 +38,4 @@ install docker and whalebrew
   - ghcr.io/wtnb75/randgen
   - ghcr.io/wtnb75/kubebuilder
   - ghcr.io/wtnb75/duckdb
+  - ghcr.io/wtnb75/pandoc
