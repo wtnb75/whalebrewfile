@@ -22,8 +22,17 @@ install docker and whalebrew
   - ghcr.io/wtnb75/zopflipng
 - database
   - ghcr.io/wtnb75/sqlite3
-- k8s development
-  - ghcr.io/wtnb75/kubebuilder
+- network
+  - ghcr.io/wtnb75/grpcui
+  - ghcr.io/wtnb75/grpc_cli
+  - ghcr.io/wtnb75/lftp
+- programming
+  - ghcr.io/wtnb75/jupyter (Python)
 - misc.
   - ghcr.io/wtnb75/calc
   - ghcr.io/wtnb75/jhd
+  - ghcr.io/wtnb75/uuidgen_linux
+- amd64 only image
+  - ghcr.io/wtnb75/randgen
+  - ghcr.io/wtnb75/kubebuilder
+  - ghcr.io/wtnb75/duckdb
