@@ -21,6 +21,8 @@ jobs:
         - lftp
         - ncftp
         - rsync
+        - gifsicle
+        - gif-for-cli
     runs-on: ubuntu-latest
     steps:
      - name: checkout
