@@ -1,0 +1,25 @@
+From 89ba49f0848d7bddc51cfd07a03478c73e4398d2 Mon Sep 17 00:00:00 2001
+From: Watanabe Takashi <wtnb75@gmail.com>
+Date: Thu, 28 Jan 2021 02:44:38 +0000
+Subject: [PATCH] alpine fix
+
+---
+ .../libraries/libc-wasi/sandboxed-system-primitives/src/posix.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c b/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c
+index df31ea3..482f9eb 100644
+--- a/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c
++++ b/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c
+@@ -2138,7 +2138,7 @@ static void convert_timestamp(
+ ) {
+   // Store sub-second remainder.
+ #ifndef __APPLE__
+-  out->tv_nsec = (__syscall_slong_t)(in % 1000000000);
++  out->tv_nsec = (long)(in % 1000000000);
+ #else
+   out->tv_nsec = (long)(in % 1000000000);
+ #endif
+-- 
+2.30.0
+
