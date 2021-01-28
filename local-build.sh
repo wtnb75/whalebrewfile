@@ -7,5 +7,5 @@ for i; do
   [ -f ${dn} ] && dn=$(dirname $i)
   docker build -t ${prefix}/${dn}:latest ${dn} || continue
   whalebrew uninstall -y ${prefix}/${dn}
-  whalebrew install ${prefix}/${dn}
+  whalebrew install -y ${prefix}/${dn}
 done
