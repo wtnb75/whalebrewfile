@@ -23,6 +23,10 @@ jobs:
         - rsync
         - gifsicle
         - gif-for-cli
+        - csvq
+        - apache-loggen
+        - sysbench
+        - sslscan
     runs-on: ubuntu-latest
     steps:
      - name: checkout
