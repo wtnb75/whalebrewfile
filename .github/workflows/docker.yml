@@ -23,6 +23,9 @@ jobs:
         - rsync
         - gifsicle
         - gif-for-cli
+        - wasmtime
+        - wasmer
+        - wamr
     runs-on: ubuntu-latest
     steps:
      - name: checkout

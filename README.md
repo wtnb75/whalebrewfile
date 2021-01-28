@@ -22,6 +22,10 @@ install docker and whalebrew
   - ghcr.io/wtnb75/zopflipng
 - database
   - ghcr.io/wtnb75/sqlite3
+- WASI(WebAssembly)
+  - ghcr.io/wtnb75/wasmtime
+  - ghcr.io/wtnb75/wasmer
+  - ghcr.io/wtnb75/wamr
 - network
   - ghcr.io/wtnb75/grpcui
   - ghcr.io/wtnb75/grpc_cli
