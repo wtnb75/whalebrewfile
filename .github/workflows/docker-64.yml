@@ -10,6 +10,10 @@ jobs:
       matrix:
         images:
         - grpc_cli
+        - apache-loggen
+        #- wasmtime
+        #- wasmer
+        #- wamr
     runs-on: ubuntu-latest
     steps:
      - name: checkout

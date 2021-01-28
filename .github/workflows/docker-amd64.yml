@@ -13,6 +13,9 @@ jobs:
         - randgen
         - duckdb
         - pandoc
+        - wasmtime
+        - wasmer
+        - wamr
         # - jupyter-pyston
     runs-on: ubuntu-latest
     steps:
