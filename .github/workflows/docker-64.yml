@@ -11,6 +11,7 @@ jobs:
         images:
         - grpc_cli
         - wasmtime
+        - wasmer
     runs-on: ubuntu-latest
     steps:
      - name: checkout
