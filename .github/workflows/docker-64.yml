@@ -10,8 +10,8 @@ jobs:
       matrix:
         images:
         - grpc_cli
-        - wasmtime
-        - wasmer
+        #- wasmtime
+        #- wasmer
         #- wamr
     runs-on: ubuntu-latest
     steps:
