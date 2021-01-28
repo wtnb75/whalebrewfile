@@ -12,7 +12,7 @@ jobs:
         - grpc_cli
         - wasmtime
         - wasmer
-        - wamr
+        #- wamr
     runs-on: ubuntu-latest
     steps:
      - name: checkout
