@@ -26,6 +26,7 @@ jobs:
         - csvq
         - sysbench
         - sslscan
+        - cscope
     runs-on: ubuntu-latest
     steps:
      - name: checkout

@@ -20,13 +20,16 @@ install docker and whalebrew
   - ghcr.io/wtnb75/optipng
   - ghcr.io/wtnb75/pdfcrop
   - ghcr.io/wtnb75/zopflipng
+- documentation
+  - ghcr.io/wtnb75/pandoc   (amd64)
 - database
   - ghcr.io/wtnb75/sqlite3
   - ghcr.io/wtnb75/csvq
+  - ghcr.io/wtnb75/duckdb   (amd64)
 - WASI(WebAssembly)
-  - ghcr.io/wtnb75/wasmtime
-  - ghcr.io/wtnb75/wasmer
-  - ghcr.io/wtnb75/wamr
+  - ghcr.io/wtnb75/wasmtime (amd64)
+  - ghcr.io/wtnb75/wasmer   (amd64)
+  - ghcr.io/wtnb75/wamr     (amd64)
 - network
   - ghcr.io/wtnb75/grpcui
   - ghcr.io/wtnb75/grpc_cli
@@ -35,14 +38,12 @@ install docker and whalebrew
   - ghcr.io/wtnb75/rsync
   - ghcr.io/wtnb75/sslscan
 - programming
-  - ghcr.io/wtnb75/jupyter (Python)
+  - ghcr.io/wtnb75/jupyter     (Python)
+  - ghcr.io/wtnb75/cscope
+  - ghcr.io/wtnb75/kubebuilder (amd64)
 - misc.
   - ghcr.io/wtnb75/calc
   - ghcr.io/wtnb75/jhd
   - ghcr.io/wtnb75/uuidgen_linux
   - ghcr.io/wtnb75/apache-loggen
-- amd64 only image
   - ghcr.io/wtnb75/randgen
-  - ghcr.io/wtnb75/kubebuilder
-  - ghcr.io/wtnb75/duckdb
-  - ghcr.io/wtnb75/pandoc
