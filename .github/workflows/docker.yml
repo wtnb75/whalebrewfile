@@ -27,6 +27,7 @@ jobs:
         - sysbench
         - sslscan
         - cscope
+        - git-webui
     runs-on: ubuntu-latest
     steps:
      - name: checkout
