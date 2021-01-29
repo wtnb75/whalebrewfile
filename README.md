@@ -42,6 +42,8 @@ install docker and whalebrew
   - ghcr.io/wtnb75/cscope
   - ghcr.io/wtnb75/kubebuilder (amd64)
   - ghcr.io/wtnb75/git-webui
+- benchmarking
+  - ghcr.io/wtnb75/sysbench
 - misc.
   - ghcr.io/wtnb75/calc
   - ghcr.io/wtnb75/jhd

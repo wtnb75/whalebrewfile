@@ -28,6 +28,7 @@ jobs:
         - sslscan
         - cscope
         - git-webui
+        - genisoimage
     runs-on: ubuntu-latest
     steps:
      - name: checkout
