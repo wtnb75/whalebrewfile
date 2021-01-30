@@ -1,7 +1,7 @@
 FROM alpine:3 as dev
 ARG cscope_ver=15.9
 RUN apk add gcc make musl-dev ncurses-dev
-ADD https://sourceforge.net/projects/cscope/files/cscope/v${cscope_ver}/cscope-${cscope_ver}.tar.gz/download /cscope-${cscope_ver}.tar.gz
+ADD https://downloads.sourceforge.net/project/cscope/cscope/v${cscope_ver}/cscope-${cscope_ver}.tar.gz /
 RUN tar xfz cscope-${cscope_ver}.tar.gz
 RUN cd cscope-${cscope_ver} && ./configure && make && make install
 
