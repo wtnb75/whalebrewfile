@@ -26,6 +26,10 @@ jobs:
         - csvq
         - sysbench
         - sslscan
+        - cscope
+        - git-webui
+        - genisoimage
+        - alpine-pkg
     runs-on: ubuntu-latest
     steps:
      - name: checkout
