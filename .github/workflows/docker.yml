@@ -30,6 +30,7 @@ jobs:
         - git-webui
         - genisoimage
         - alpine-pkg
+        - rrdtool
     runs-on: ubuntu-latest
     steps:
      - name: checkout
