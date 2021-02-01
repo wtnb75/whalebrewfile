@@ -34,6 +34,7 @@ install docker and whalebrew
   - ghcr.io/wtnb75/wasmer   (amd64)
   - ghcr.io/wtnb75/wamr     (amd64)
 - network
+  - ghcr.io/wtnb75/protoc
   - ghcr.io/wtnb75/grpcui
   - ghcr.io/wtnb75/grpc_cli
   - ghcr.io/wtnb75/lftp
