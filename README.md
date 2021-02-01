@@ -20,17 +20,21 @@ install docker and whalebrew
   - ghcr.io/wtnb75/optipng
   - ghcr.io/wtnb75/pdfcrop
   - ghcr.io/wtnb75/zopflipng
+  - ghcr.io/wtnb75/imagemagick
+  - ghcr.io/wtnb75/graphicsmagick
 - documentation
   - ghcr.io/wtnb75/pandoc   (amd64)
 - database
   - ghcr.io/wtnb75/sqlite3
   - ghcr.io/wtnb75/csvq
+  - ghcr.io/wtnb75/rrdtool
   - ghcr.io/wtnb75/duckdb   (amd64)
 - WASI(WebAssembly)
   - ghcr.io/wtnb75/wasmtime (amd64)
   - ghcr.io/wtnb75/wasmer   (amd64)
   - ghcr.io/wtnb75/wamr     (amd64)
 - network
+  - ghcr.io/wtnb75/protoc
   - ghcr.io/wtnb75/grpcui
   - ghcr.io/wtnb75/grpc_cli
   - ghcr.io/wtnb75/lftp
