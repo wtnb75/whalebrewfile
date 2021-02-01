@@ -16,7 +16,6 @@ jobs:
         - sqlite3
         - optipng
         - zopflipng
-        - protoc
         - grpcui
         - uuidgen_linux
         - lftp
