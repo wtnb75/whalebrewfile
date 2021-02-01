@@ -20,6 +20,8 @@ install docker and whalebrew
   - ghcr.io/wtnb75/optipng
   - ghcr.io/wtnb75/pdfcrop
   - ghcr.io/wtnb75/zopflipng
+  - ghcr.io/wtnb75/imagemagick
+  - ghcr.io/wtnb75/graphicsmagick
 - documentation
   - ghcr.io/wtnb75/pandoc   (amd64)
 - database

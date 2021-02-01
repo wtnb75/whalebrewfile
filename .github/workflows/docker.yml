@@ -31,6 +31,8 @@ jobs:
         - genisoimage
         - alpine-pkg
         - rrdtool
+        - imagemagick
+        - graphicsmagick
     runs-on: ubuntu-latest
     steps:
      - name: checkout
