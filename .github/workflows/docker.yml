@@ -37,6 +37,10 @@ jobs:
         - john
     runs-on: ubuntu-latest
     steps:
+     - name: checkout
+       uses: actions/checkout@v2
+       with:
+         lfs: true
      - name: setup qemu
        uses: docker/setup-qemu-action@v1
      - name: setup docker buildx
