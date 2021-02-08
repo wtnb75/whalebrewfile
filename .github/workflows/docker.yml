@@ -1,6 +1,8 @@
 name: docker image
 
 on:
+  workflow_run:
+    workflows: ["entrypoint"]
   push:
     branches-ignore: [gh-pages]
 
@@ -11,7 +13,6 @@ jobs:
         images:
         - calc
         - jhd
-        - jupyter
         - pdfcrop
         - sqlite3
         - optipng
@@ -33,6 +34,7 @@ jobs:
         - rrdtool
         - imagemagick
         - graphicsmagick
+        - john
     runs-on: ubuntu-latest
     steps:
      - name: checkout

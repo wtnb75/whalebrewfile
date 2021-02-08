@@ -7,4 +7,5 @@ RUN go get github.com/rqlite/rqlite/cmd/rqbench
 FROM alpine:3
 COPY --from=dev /go/bin/rq* /usr/local/bin/
 ADD entrypoint.sh /
+LABEL io.whalebrew.config.networks '["host"]'
 ENTRYPOINT ["/entrypoint.sh"]

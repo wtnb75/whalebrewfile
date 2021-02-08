@@ -1,0 +1,43 @@
+imagemagick:
+  commands:
+  - animate
+  - compare
+  - composite
+  - conjure
+  - convert
+  - display
+  - identify
+  - import
+  - magick
+  - magick-script
+  - mogrify
+  - montage
+  - stream
+alpine-pkg:
+  commands:
+  - abuild
+  - abuild-addgroup
+  - abuild-adduser
+  - abuild-apk
+  - abuild-fetch
+  - abuild-gzsplit
+  - abuild-keygen
+  - abuild-rmtemp
+  - abuild-sign
+  - abuild-sudo
+  - abuild-tar
+  - abump
+  - apkgrel
+  - buildlab
+  - checkapk
+  - newapkbuild
+  - apkbuild-fixer
+  - apkbuild-lint
+  - aports-lint
+  - initd-lint
+  - secfixes-check
+rqlite:
+  commands:
+  - rqbench
+  - rqlite
+  - rqlited
