@@ -21,8 +21,6 @@ jobs:
         # - jupyter-pyston
     runs-on: ubuntu-latest
     steps:
-     - name: checkout
-       uses: actions/checkout@v2
      - name: setup docker buildx
        id: buildx
        uses: docker/setup-buildx-action@v1
