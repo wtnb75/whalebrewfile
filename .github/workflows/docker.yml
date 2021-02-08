@@ -24,7 +24,6 @@ jobs:
         - gif-for-cli
         - csvq
         - sysbench
-        - sslscan
         - cscope
         - git-webui
         - genisoimage
