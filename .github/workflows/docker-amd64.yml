@@ -10,7 +10,7 @@ jobs:
       matrix:
         images:
         - kubebuilder
-        - randgen
+        # - randgen
         - duckdb
         - pandoc
         - wasmtime

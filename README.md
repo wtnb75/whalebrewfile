@@ -53,4 +53,3 @@ install docker and whalebrew
   - ghcr.io/wtnb75/jhd
   - ghcr.io/wtnb75/uuidgen_linux
   - ghcr.io/wtnb75/apache-loggen
-  - ghcr.io/wtnb75/randgen

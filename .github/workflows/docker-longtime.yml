@@ -1,37 +1,16 @@
-name: docker image
+name: docker image (long)
 
 on:
   push:
-    branches-ignore: [gh-pages]
+    branches: [main]
 
 jobs:
   buildx:
     strategy:
       matrix:
         images:
-        - calc
-        - jhd
-        - pdfcrop
-        - sqlite3
-        - optipng
-        - zopflipng
-        - grpcui
-        - uuidgen_linux
-        - lftp
-        - ncftp
-        - rsync
-        - gifsicle
-        - gif-for-cli
-        - csvq
-        - sysbench
-        - cscope
-        - git-webui
-        - genisoimage
-        - alpine-pkg
-        - rrdtool
-        - imagemagick
-        - graphicsmagick
-        - john
+        - sslscan
+        - jupyter
     runs-on: ubuntu-latest
     steps:
      - name: checkout
