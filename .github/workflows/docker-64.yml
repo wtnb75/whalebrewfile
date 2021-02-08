@@ -1,8 +1,6 @@
 name: docker image (x64 + arm64)
 
 on:
-  workflow_run:
-    workflows: ["entrypoint"]
   push:
     branches-ignore: [gh-pages]
 
