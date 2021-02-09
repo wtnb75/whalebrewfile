@@ -1,0 +1,23 @@
+# whalebrew files
+
+## requirements
+
+install docker and whalebrew
+
+## supported platforms
+
+- linux/amd64
+- linux/arm64
+- linux/arm/v7
+
+## Usage
+
+- whalebrew install {{prefix}}/{IMAGE}
+
+## Images
+{% for name, img in categories.items() %}
+- {{name}}
+{%- for i in img %}
+  - {% if i not in images %}~~{%endif%}{{prefix}}/{{i}}{% if i not in images %}~~{%elif images[i].platforms != ["amd64", "arm64", "arm/v7"] %}  ({{ images[i].platforms | join(",") }}){%endif%}
+{%- endfor %}
+{%- endfor %}

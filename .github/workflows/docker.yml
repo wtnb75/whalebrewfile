@@ -32,6 +32,8 @@ jobs:
         - imagemagick
         - graphicsmagick
         - john
+        - abcmidi
+        - csvkit
     runs-on: ubuntu-latest
     steps:
      - name: checkout

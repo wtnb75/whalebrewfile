@@ -2,12 +2,41 @@
 set -f
 
 cmd=$1; shift
+{% if cmdpath is defined %}
+[ -n "${cmd}" -a  -x {{cmdpath}}/{{prefix|default('')}}${cmd} ] && exec {{cmdpath}}/{{prefix|default('')}}${cmd} $*
+echo -e "Usage: {{name}} SUBCOMMAND ...\n"
+echo "SUBCOMMANDS:"
+find {{cmdpath}} -maxdepth 1 -type f -executable | awk -F/ '{cmd=$NF; {% if prefix is defined %}gsub("^{{prefix}}", "", cmd);{% endif %}print "  "cmd;}'
+{% elif apk is defined %}
+[ -n "${cmd}" ] && exec {{prefix|default('')}}${cmd} $*
+echo -e "Usage: {{name}} SUBCOMMAND ...\n"
+echo "Package info:"
+apk info {{apk}} 2>/dev/null
+echo ""
+echo "SUBCOMMANDS:"
+apk info -L {{apk}} 2>/dev/null | grep bin/  | awk -F/ '{cmd=$NF; {% if prefix is defined %}gsub("^{{prefix}}", "", cmd);{% endif %}print "  "cmd;}'
+{% elif pip is defined %}
+[ -n "${cmd}" ] && exec {{prefix|default('')}}${cmd} $*
+echo -e "Usage: {{name}} SUBCOMMAND ...\n"
+echo "Package info:"
+pip show {{pip}} 2>/dev/null
+echo ""
+echo "SUBCOMMANDS:"
+pip show -f {{pip}} 2>/dev/null | grep bin/  | awk -F/ '{cmd=$NF; {% if prefix is defined %}gsub("^{{prefix}}", "", cmd);{% endif %}print "  "cmd;}'
+{% else %}
 case "${cmd}" in
   {{commands|join('|')}})
     exec {{prefix|default('')}}${cmd} $*
     ;;
   *)
-    echo "Usage: $0 [{{commands|join('|')}}] ..."
+    cat <<EOF
+Usage: {{name}} SUBCOMMAND ...
+
+SUBCOMMANDS:{% for c in commands %}
+  {{c}}
+{%- endfor %}
+EOF
     exit 1
     ;;
 esac
+{% endif %}

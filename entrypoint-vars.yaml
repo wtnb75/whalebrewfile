@@ -1,18 +1,5 @@
 imagemagick:
-  commands:
-  - animate
-  - compare
-  - composite
-  - conjure
-  - convert
-  - display
-  - identify
-  - import
-  - magick
-  - magick-script
-  - mogrify
-  - montage
-  - stream
+  apk: imagemagick
 alpine-pkg:
   commands:
   - abuild
@@ -37,7 +24,9 @@ alpine-pkg:
   - initd-lint
   - secfixes-check
 rqlite:
-  commands:
-  - rqbench
-  - rqlite
-  - rqlited
+  cmdpath: /usr/local/bin
+  #prefix: rq
+abcmidi:
+  cmdpath: /usr/local/bin
+csvkit:
+  pip: csvkit

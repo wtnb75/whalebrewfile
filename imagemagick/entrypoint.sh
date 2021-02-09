@@ -2,12 +2,12 @@
 set -f
 
 cmd=$1; shift
-case "${cmd}" in
-  animate|compare|composite|conjure|convert|display|identify|import|magick|magick-script|mogrify|montage|stream)
-    exec ${cmd} $*
-    ;;
-  *)
-    echo "Usage: $0 [animate|compare|composite|conjure|convert|display|identify|import|magick|magick-script|mogrify|montage|stream] ..."
-    exit 1
-    ;;
-esac
+
+[ -n "${cmd}" ] && exec ${cmd} $*
+echo -e "Usage: imagemagick SUBCOMMAND ...\n"
+echo "Package info:"
+apk info imagemagick 2>/dev/null
+echo ""
+echo "SUBCOMMANDS:"
+apk info -L imagemagick 2>/dev/null | grep bin/  | awk -F/ '{cmd=$NF; print "  "cmd;}'
+
