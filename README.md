@@ -16,40 +16,49 @@ install docker and whalebrew
 
 ## Images
 
-- image
+- image processing
   - ghcr.io/wtnb75/optipng
-  - ghcr.io/wtnb75/pdfcrop
   - ghcr.io/wtnb75/zopflipng
+  - ghcr.io/wtnb75/pdfcrop
   - ghcr.io/wtnb75/imagemagick
   - ghcr.io/wtnb75/graphicsmagick
+  - ghcr.io/wtnb75/gifsicle
+  - ghcr.io/wtnb75/gif-for-cli
 - documentation
-  - ghcr.io/wtnb75/pandoc   (amd64)
+  - ghcr.io/wtnb75/pandoc  (amd64)
 - database
   - ghcr.io/wtnb75/sqlite3
   - ghcr.io/wtnb75/csvq
   - ghcr.io/wtnb75/rrdtool
-  - ghcr.io/wtnb75/duckdb   (amd64)
+  - ghcr.io/wtnb75/duckdb  (amd64)
 - WASI(WebAssembly)
-  - ghcr.io/wtnb75/wasmtime (amd64)
-  - ghcr.io/wtnb75/wasmer   (amd64)
-  - ghcr.io/wtnb75/wamr     (amd64)
+  - ghcr.io/wtnb75/wasmtime  (amd64)
+  - ghcr.io/wtnb75/wasmer  (amd64)
+  - ghcr.io/wtnb75/wamr  (amd64)
 - network
-  - ghcr.io/wtnb75/protoc
   - ghcr.io/wtnb75/grpcui
-  - ghcr.io/wtnb75/grpc_cli
+  - ghcr.io/wtnb75/grpc_cli  (amd64,arm64)
   - ghcr.io/wtnb75/lftp
   - ghcr.io/wtnb75/ncftp
   - ghcr.io/wtnb75/rsync
+- security
   - ghcr.io/wtnb75/sslscan
+  - ghcr.io/wtnb75/john
 - programming
-  - ghcr.io/wtnb75/jupyter     (Python)
+  - ghcr.io/wtnb75/protoc  (amd64,arm64)
+  - ghcr.io/wtnb75/jupyter
   - ghcr.io/wtnb75/cscope
-  - ghcr.io/wtnb75/kubebuilder (amd64)
+  - ghcr.io/wtnb75/kubebuilder  (amd64)
   - ghcr.io/wtnb75/git-webui
 - benchmarking
   - ghcr.io/wtnb75/sysbench
-- misc.
+- archive
+  - ghcr.io/wtnb75/genisoimage
+- misc
+  - ghcr.io/wtnb75/abcmidi
+  - ghcr.io/wtnb75/alpine-pkg
+  - ghcr.io/wtnb75/apache-loggen  (amd64,arm64)
   - ghcr.io/wtnb75/calc
+  - ghcr.io/wtnb75/csvkit
   - ghcr.io/wtnb75/jhd
   - ghcr.io/wtnb75/uuidgen_linux
-  - ghcr.io/wtnb75/apache-loggen

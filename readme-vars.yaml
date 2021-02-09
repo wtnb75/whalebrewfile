@@ -1,0 +1,40 @@
+prefix: ghcr.io/wtnb75
+categories:
+  "image processing":
+    - optipng
+    - zopflipng
+    - pdfcrop
+    - imagemagick
+    - graphicsmagick
+    - gifsicle
+    - gif-for-cli
+  documentation:
+    - pandoc
+  database:
+    - sqlite3
+    - csvq
+    - rrdtool
+    - duckdb
+  "WASI(WebAssembly)":
+    - wasmtime
+    - wasmer
+    - wamr
+  network:
+    - grpcui
+    - grpc_cli
+    - lftp
+    - ncftp
+    - rsync
+  security:
+    - sslscan
+    - john
+  programming:
+    - protoc
+    - jupyter
+    - cscope
+    - kubebuilder
+    - git-webui
+  benchmarking:
+    - sysbench
+  archive:
+    - genisoimage
