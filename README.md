@@ -42,8 +42,8 @@ install docker and whalebrew
   - ghcr.io/wtnb75/lftp
   - ghcr.io/wtnb75/ncftp
   - ghcr.io/wtnb75/rsync
-  - ghcr.io/wtnb75/doh-cli
-  - ghcr.io/wtnb75/doh
+  - ghcr.io/wtnb75/doh-cli https://gitlab.com/libreops/doh-cli
+  - ghcr.io/wtnb75/doh https://github.com/picatz/doh
 - security
   - ghcr.io/wtnb75/sslscan
   - ghcr.io/wtnb75/john
@@ -59,11 +59,11 @@ install docker and whalebrew
 - archive
   - ghcr.io/wtnb75/genisoimage
 - misc
-  - ghcr.io/wtnb75/abcmidi
+  - ghcr.io/wtnb75/abcmidi https://github.com/sshlien/abcmidi
   - ghcr.io/wtnb75/alpine-pkg
   - ghcr.io/wtnb75/apache-loggen  (amd64,arm64)
   - ghcr.io/wtnb75/calc
-  - ghcr.io/wtnb75/csvkit
+  - ghcr.io/wtnb75/csvkit https://github.com/wireservice/csvkit
   - ghcr.io/wtnb75/jhd
   - ghcr.io/wtnb75/uuidgen_linux
 - TODO

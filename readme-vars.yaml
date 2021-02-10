@@ -45,3 +45,7 @@ categories:
 urls:
   sysbench: https://github.com/akopytov/sysbench
   gawkextlib: http://gawkextlib.sourceforge.net/
+  abcmidi: https://github.com/sshlien/abcmidi
+  csvkit: https://github.com/wireservice/csvkit
+  doh: https://github.com/picatz/doh
+  doh-cli: https://gitlab.com/libreops/doh-cli

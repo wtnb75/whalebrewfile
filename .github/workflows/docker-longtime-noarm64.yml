@@ -1,8 +1,8 @@
-name: docker image (x64 + arm32)
+name: docker image (x64 + arm32, long)
 
 on:
   push:
-    branches-ignore: [gh-pages]
+    branches: [main]
 
 jobs:
   buildx:
