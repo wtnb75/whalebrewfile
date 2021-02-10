@@ -1,0 +1,22 @@
+diff -up ./doh-cli.orig ./doh-cli
+--- ./doh-cli.orig
++++ ./doh-cli
+@@ -14,10 +14,17 @@
+     "google":        "https://dns.google/dns-query",
+     "cloudflare":    "https://cloudflare-dns.com/dns-query",
+     "quad9":         "https://dns.quad9.net/dns-query",
+-    "cleanbrowsing": "https://doh.cleanbrowsing.org/doh/family-filter/?ct",
++    "cleanbrowsing": "https://doh.cleanbrowsing.org/doh/family-filter/",
++    "cleanbrowsing-s": "https://doh.cleanbrowsing.org/doh/security-filter/",
++    "cleanbrowsing-a": "https://doh.cleanbrowsing.org/doh/adult-filter/",
+     "cira":          "https://private.canadianshield.cira.ca/dns-query",
+     "cira-protect":  "https://protected.canadianshield.cira.ca/dns-query",
+     "cira-family":   "https://family.canadianshield.cira.ca/dns-query",
++    "iij":           "https://public.dns.iij.jp/dns-query",
++    "adguard":       "https://dns.adguard.com/dns-query",
++    "adguard-family": "https://dns-family.adguard.com/dns-query",
++    "opendns":       "https://doh.opendns.com/dns-query",
++    "opendns-family":"https://doh.familyshield.opendns.com/dns-query",
+ }
+ 
+ RR = ["A", "AAAA", "CNAME", "MX", "NS", "SOA", "SPF", "SRV", "TXT", "CAA"]

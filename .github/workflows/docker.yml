@@ -35,6 +35,8 @@ jobs:
         - abcmidi
         - csvkit
         - gawkextlib
+        - doh-cli
+        - doh
     runs-on: ubuntu-latest
     steps:
      - name: checkout

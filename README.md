@@ -42,6 +42,8 @@ install docker and whalebrew
   - ghcr.io/wtnb75/lftp
   - ghcr.io/wtnb75/ncftp
   - ghcr.io/wtnb75/rsync
+  - ghcr.io/wtnb75/doh-cli
+  - ghcr.io/wtnb75/doh
 - security
   - ghcr.io/wtnb75/sslscan
   - ghcr.io/wtnb75/john
@@ -51,9 +53,9 @@ install docker and whalebrew
   - ghcr.io/wtnb75/cscope
   - ghcr.io/wtnb75/kubebuilder  (amd64)
   - ghcr.io/wtnb75/git-webui
-  - ghcr.io/wtnb75/gawkextlib ->[README](gawkextlib/README.md)
+  - ghcr.io/wtnb75/gawkextlib ->[README](gawkextlib/README.md) http://gawkextlib.sourceforge.net/
 - benchmarking
-  - ghcr.io/wtnb75/sysbench
+  - ghcr.io/wtnb75/sysbench https://github.com/akopytov/sysbench
 - archive
   - ghcr.io/wtnb75/genisoimage
 - misc

@@ -26,6 +26,8 @@ categories:
     - lftp
     - ncftp
     - rsync
+    - doh-cli
+    - doh
   security:
     - sslscan
     - john
@@ -40,3 +42,6 @@ categories:
     - sysbench
   archive:
     - genisoimage
+urls:
+  sysbench: https://github.com/akopytov/sysbench
+  gawkextlib: http://gawkextlib.sourceforge.net/
