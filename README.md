@@ -53,7 +53,7 @@ install docker and whalebrew
   - ghcr.io/wtnb75/cscope
   - ghcr.io/wtnb75/kubebuilder  (amd64)
   - ghcr.io/wtnb75/git-webui
-  - ghcr.io/wtnb75/gawkextlib ->[README](gawkextlib/README.md) http://gawkextlib.sourceforge.net/
+  - ghcr.io/wtnb75/gawkextlib  (amd64,arm/v7) ->[README](gawkextlib/README.md) http://gawkextlib.sourceforge.net/
 - benchmarking
   - ghcr.io/wtnb75/sysbench https://github.com/akopytov/sysbench
 - archive
