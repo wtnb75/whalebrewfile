@@ -49,6 +49,8 @@ def readme(template, variables):
     data = yaml.safe_load(variables)
     # load workflows
     data["images"] = {}
+    allbuild = set([os.path.dirname(x) for x in glob.glob("*/Dockerfile")])
+    sub_readmes = set([os.path.dirname(x) for x in glob.glob("*/README.md")])
     for f in glob.glob(".github/workflows/*.yml"):
         platforms = None
         images = None
@@ -71,6 +73,8 @@ def readme(template, variables):
     for v in data.get("categories", {}).values():
         cats.update(v)
     data["categories"]["misc"] = sorted(list(imgs - cats))
+    data["categories"]["TODO"] = sorted(list(allbuild - imgs - cats))
+    data["readmes"] = sub_readmes
     print(render_tmpl(tmpl, data))
 
 

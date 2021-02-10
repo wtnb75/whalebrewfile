@@ -11,6 +11,7 @@ jobs:
         images:
         - sslscan
         - jupyter
+        - sysbench
     runs-on: ubuntu-latest
     steps:
      - name: checkout
