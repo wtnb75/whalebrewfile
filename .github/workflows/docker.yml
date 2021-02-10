@@ -23,7 +23,6 @@ jobs:
         - gifsicle
         - gif-for-cli
         - csvq
-        - sysbench
         - cscope
         - git-webui
         - genisoimage
