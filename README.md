@@ -31,6 +31,7 @@ install docker and whalebrew
   - ghcr.io/wtnb75/csvq
   - ghcr.io/wtnb75/rrdtool
   - ghcr.io/wtnb75/duckdb  (amd64)
+  - ~~ghcr.io/wtnb75/rqlite~~
 - WASI(WebAssembly)
   - ghcr.io/wtnb75/wasmtime  (amd64)
   - ghcr.io/wtnb75/wasmer  (amd64)
@@ -50,6 +51,7 @@ install docker and whalebrew
   - ghcr.io/wtnb75/cscope
   - ghcr.io/wtnb75/kubebuilder  (amd64)
   - ghcr.io/wtnb75/git-webui
+  - ghcr.io/wtnb75/gawkextlib ->[README](gawkextlib/README.md)
 - benchmarking
   - ghcr.io/wtnb75/sysbench
 - archive
@@ -62,3 +64,9 @@ install docker and whalebrew
   - ghcr.io/wtnb75/csvkit
   - ghcr.io/wtnb75/jhd
   - ghcr.io/wtnb75/uuidgen_linux
+- TODO
+  - ~~ghcr.io/wtnb75/chromium~~
+  - ~~ghcr.io/wtnb75/jupyter-pyston~~
+  - ~~ghcr.io/wtnb75/mkcert~~
+  - ~~ghcr.io/wtnb75/monetdb~~
+  - ~~ghcr.io/wtnb75/randgen~~

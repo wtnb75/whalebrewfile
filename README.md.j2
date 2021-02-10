@@ -18,6 +18,6 @@ install docker and whalebrew
 {% for name, img in categories.items() %}
 - {{name}}
 {%- for i in img %}
-  - {% if i not in images %}~~{%endif%}{{prefix}}/{{i}}{% if i not in images %}~~{%elif images[i].platforms != ["amd64", "arm64", "arm/v7"] %}  ({{ images[i].platforms | join(",") }}){%endif%}
+  - {% if i not in images %}~~{%endif%}{{prefix}}/{{i}}{% if i not in images %}~~{%elif images[i].platforms != ["amd64", "arm64", "arm/v7"] %}  ({{ images[i].platforms | join(",") }}){%endif%}{% if i in readmes %} ->[README]({{i}}/README.md){%endif%}
 {%- endfor %}
 {%- endfor %}
