@@ -13,7 +13,6 @@ jobs:
         - apache-loggen
         - protoc
         - bat
-        - delta
         - grex
         #- wasmtime
         #- wasmer

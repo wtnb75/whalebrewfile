@@ -16,6 +16,7 @@ jobs:
         - wasmtime
         - wasmer
         - wamr
+        - delta
         # - jupyter-pyston
     runs-on: ubuntu-latest
     steps:
