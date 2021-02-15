@@ -35,6 +35,10 @@ jobs:
         - csvkit
         - doh-cli
         - doh
+        - bat
+        - delta
+        - grex
+        - tlsobs
     runs-on: ubuntu-latest
     steps:
      - name: checkout
