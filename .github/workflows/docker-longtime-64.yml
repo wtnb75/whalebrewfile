@@ -1,41 +1,16 @@
-name: docker image
+name: docker image (long 64)
 
 on:
   push:
-    branches-ignore: [gh-pages]
+    branches: [main]
 
 jobs:
   buildx:
     strategy:
       matrix:
         images:
-        - calc
-        - jhd
-        - pdfcrop
-        - sqlite3
-        - optipng
-        - zopflipng
-        - grpcui
-        - uuidgen_linux
-        - lftp
-        - ncftp
-        - rsync
-        - gifsicle
-        - gif-for-cli
-        - csvq
-        - cscope
-        - git-webui
-        - genisoimage
-        - alpine-pkg
-        - rrdtool
-        - imagemagick
-        - graphicsmagick
-        - john
-        - abcmidi
-        - csvkit
-        - doh-cli
-        - doh
-        - tlsobs
+        - sysbench
+        - grex
     runs-on: ubuntu-latest
     steps:
      - name: checkout
@@ -57,7 +32,7 @@ jobs:
        uses: docker/build-push-action@v2
        with:
          #platforms: ${{ steps.buildx.outputs.platforms }}
-         platforms: linux/amd64,linux/arm64,linux/arm/v7
+         platforms: linux/amd64,linux/arm64
          push: true
          context: ${{ matrix.images }}
          file: ${{ matrix.images }}/Dockerfile

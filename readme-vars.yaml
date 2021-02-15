@@ -8,8 +8,11 @@ categories:
     - graphicsmagick
     - gifsicle
     - gif-for-cli
-  documentation:
+  "text processing":
     - pandoc
+    - delta
+    - bat
+    - grex
   database:
     - sqlite3
     - csvq
@@ -31,6 +34,7 @@ categories:
   security:
     - sslscan
     - john
+    - tlsobs
   programming:
     - protoc
     - jupyter
@@ -49,3 +53,6 @@ urls:
   csvkit: https://github.com/wireservice/csvkit
   doh: https://github.com/picatz/doh
   doh-cli: https://gitlab.com/libreops/doh-cli
+  delta: https://github.com/dandavison/delta
+  grex: https://github.com/pemistahl/grex
+  bat: https://github.com/sharkdp/bat
