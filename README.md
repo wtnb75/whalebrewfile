@@ -24,8 +24,11 @@ install docker and whalebrew
   - ghcr.io/wtnb75/graphicsmagick
   - ghcr.io/wtnb75/gifsicle
   - ghcr.io/wtnb75/gif-for-cli
-- documentation
+- text processing
   - ghcr.io/wtnb75/pandoc  (amd64)
+  - ghcr.io/wtnb75/delta
+  - ghcr.io/wtnb75/bat
+  - ghcr.io/wtnb75/grex
 - database
   - ghcr.io/wtnb75/sqlite3
   - ghcr.io/wtnb75/csvq
@@ -47,6 +50,7 @@ install docker and whalebrew
 - security
   - ghcr.io/wtnb75/sslscan
   - ghcr.io/wtnb75/john
+  - ghcr.io/wtnb75/tlsobs
 - programming
   - ghcr.io/wtnb75/protoc  (amd64,arm64)
   - ghcr.io/wtnb75/jupyter

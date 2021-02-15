@@ -8,8 +8,11 @@ categories:
     - graphicsmagick
     - gifsicle
     - gif-for-cli
-  documentation:
+  "text processing":
     - pandoc
+    - delta
+    - bat
+    - grex
   database:
     - sqlite3
     - csvq
@@ -31,6 +34,7 @@ categories:
   security:
     - sslscan
     - john
+    - tlsobs
   programming:
     - protoc
     - jupyter
