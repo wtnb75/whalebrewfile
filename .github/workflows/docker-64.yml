@@ -12,6 +12,9 @@ jobs:
         - grpc_cli
         - apache-loggen
         - protoc
+        - bat
+        - delta
+        - grex
         #- wasmtime
         #- wasmer
         #- wamr
