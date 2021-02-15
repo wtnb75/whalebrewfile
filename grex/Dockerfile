@@ -1,5 +1,5 @@
 FROM rust:1-alpine as dev
-RUN apk add musl
+RUN apk add musl-dev
 RUN cargo install grex
 
 FROM alpine:3
