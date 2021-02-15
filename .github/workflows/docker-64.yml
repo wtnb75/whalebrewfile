@@ -12,11 +12,6 @@ jobs:
         - grpc_cli
         - apache-loggen
         - protoc
-        - bat
-        - grex
-        #- wasmtime
-        #- wasmer
-        #- wamr
     runs-on: ubuntu-latest
     steps:
      - name: checkout

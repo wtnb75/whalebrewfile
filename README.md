@@ -26,9 +26,9 @@ install docker and whalebrew
   - ghcr.io/wtnb75/gif-for-cli
 - text processing
   - ghcr.io/wtnb75/pandoc  (amd64)
-  - ghcr.io/wtnb75/delta
-  - ghcr.io/wtnb75/bat
-  - ghcr.io/wtnb75/grex
+  - ~~ghcr.io/wtnb75/delta~~ https://github.com/dandavison/delta
+  - ~~ghcr.io/wtnb75/bat~~ https://github.com/sharkdp/bat
+  - ghcr.io/wtnb75/grex  (amd64,arm64) https://github.com/pemistahl/grex
 - database
   - ghcr.io/wtnb75/sqlite3
   - ghcr.io/wtnb75/csvq
@@ -59,7 +59,7 @@ install docker and whalebrew
   - ghcr.io/wtnb75/git-webui
   - ghcr.io/wtnb75/gawkextlib  (amd64,arm/v7) ->[README](gawkextlib/README.md) http://gawkextlib.sourceforge.net/
 - benchmarking
-  - ghcr.io/wtnb75/sysbench https://github.com/akopytov/sysbench
+  - ghcr.io/wtnb75/sysbench  (amd64,arm64) https://github.com/akopytov/sysbench
 - archive
   - ghcr.io/wtnb75/genisoimage
 - misc
