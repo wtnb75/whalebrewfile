@@ -36,6 +36,7 @@ jobs:
         - doh-cli
         - doh
         - tlsobs
+        - normalize
     runs-on: ubuntu-latest
     steps:
      - name: checkout
