@@ -1,5 +1,5 @@
 FROM alpine:3 as dev
-ARG calc_ver=2.12.7.2
+ARG calc_ver=2.13.0.0
 RUN apk add --no-cache gcc make musl-dev util-linux
 ADD http://isthe.com/chongo/src/calc/calc-${calc_ver}.tar.bz2 /
 RUN tar xfj calc-${calc_ver}.tar.bz2
