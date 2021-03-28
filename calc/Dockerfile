@@ -1,8 +1,10 @@
 FROM alpine:3 as dev
-ARG calc_ver=2.13.0.0
-RUN apk add --no-cache gcc make musl-dev util-linux
+ARG calc_ver=2.12.9.1
+RUN apk add --no-cache gcc make musl-dev util-linux patch
 ADD http://isthe.com/chongo/src/calc/calc-${calc_ver}.tar.bz2 /
 RUN tar xfj calc-${calc_ver}.tar.bz2
+ADD calc-file-fix.patch /
+RUN cd calc-${calc_ver} && patch -p1 < /calc-file-fix.patch
 RUN cd calc-${calc_ver} && \
     make EXTRA_CFLAGS='-DFPOS_POS_LEN=FILEPOS_LEN' && \
     make install
