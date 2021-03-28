@@ -1,5 +1,5 @@
 FROM rust:1-alpine as dev
-RUN apk add git make ncurses musl-dev libffi-dev libstdc++
+RUN apk add git make ncurses musl-dev libffi-dev libstdc++ bash
 RUN git clone --depth=1 https://github.com/wasmerio/wasmer
 RUN cd wasmer && make build-wasmer
 
