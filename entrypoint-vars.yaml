@@ -30,3 +30,5 @@ abcmidi:
   cmdpath: /usr/local/bin
 csvkit:
   pip: csvkit
+normalize:
+  cmdpath: /usr/local/bin

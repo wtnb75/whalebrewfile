@@ -16,6 +16,8 @@ jobs:
         - wasmtime
         - wasmer
         - wamr
+        - wavm
+        - normalize
         # - jupyter-pyston
     runs-on: ubuntu-latest
     steps:

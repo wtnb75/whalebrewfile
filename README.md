@@ -69,7 +69,9 @@ install docker and whalebrew
   - ghcr.io/wtnb75/calc
   - ghcr.io/wtnb75/csvkit https://github.com/wireservice/csvkit
   - ghcr.io/wtnb75/jhd
+  - ghcr.io/wtnb75/normalize  (amd64)
   - ghcr.io/wtnb75/uuidgen_linux
+  - ghcr.io/wtnb75/wavm  (amd64)
 - TODO
   - ~~ghcr.io/wtnb75/chromium~~
   - ~~ghcr.io/wtnb75/jupyter-pyston~~
