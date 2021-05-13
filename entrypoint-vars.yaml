@@ -23,6 +23,7 @@ alpine-pkg:
   - aports-lint
   - initd-lint
   - secfixes-check
+  - ccache
 rqlite:
   cmdpath: /usr/local/bin
   #prefix: rq
