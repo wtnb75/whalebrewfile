@@ -55,7 +55,7 @@ install docker and whalebrew
   - ghcr.io/wtnb75/protoc  (amd64,arm64)
   - ghcr.io/wtnb75/jupyter
   - ghcr.io/wtnb75/cscope
-  - ghcr.io/wtnb75/kubebuilder  (amd64)
+  - ~~ghcr.io/wtnb75/kubebuilder~~
   - ghcr.io/wtnb75/git-webui
   - ghcr.io/wtnb75/gawkextlib  (amd64,arm/v7) ->[README](gawkextlib/README.md) http://gawkextlib.sourceforge.net/
 - benchmarking
@@ -64,7 +64,7 @@ install docker and whalebrew
   - ghcr.io/wtnb75/genisoimage
 - misc
   - ghcr.io/wtnb75/abcmidi https://github.com/sshlien/abcmidi
-  - ghcr.io/wtnb75/alpine-pkg
+  - ghcr.io/wtnb75/alpine-pkg ->[README](alpine-pkg/README.md)
   - ghcr.io/wtnb75/apache-loggen  (amd64,arm64)
   - ghcr.io/wtnb75/calc
   - ghcr.io/wtnb75/csvkit https://github.com/wireservice/csvkit
