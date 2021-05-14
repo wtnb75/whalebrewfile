@@ -24,6 +24,7 @@ alpine-pkg:
   - initd-lint
   - secfixes-check
   - ccache
+  - apk-index
 rqlite:
   cmdpath: /usr/local/bin
   #prefix: rq

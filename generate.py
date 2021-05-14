@@ -4,6 +4,7 @@ from jinja2 import Template
 import yaml
 import click
 from logging import getLogger
+import subprocess
 
 log = getLogger(__name__)
 
@@ -20,6 +21,13 @@ def cli(ctx):
 def render_tmpl(tmpl, data):
     tmpl = Template(tmpl)
     return tmpl.render(**data)
+
+
+def glob_files(pattern):
+    cmd = ["git", "ls-files"]
+    if pattern is not None:
+        cmd.append(pattern)
+    return subprocess.check_output(cmd, text=True).splitlines()
 
 
 @cli.command()
@@ -49,9 +57,9 @@ def readme(template, variables):
     data = yaml.safe_load(variables)
     # load workflows
     data["images"] = {}
-    allbuild = set([os.path.dirname(x) for x in glob.glob("*/Dockerfile")])
-    sub_readmes = set([os.path.dirname(x) for x in glob.glob("*/README.md")])
-    for f in glob.glob(".github/workflows/*.yml"):
+    allbuild = set([os.path.dirname(x) for x in glob_files("*/Dockerfile")])
+    sub_readmes = set([os.path.dirname(x) for x in glob_files("*/README.md")])
+    for f in glob_files(".github/workflows/*.yml"):
         platforms = None
         images = None
         with open(f) as ifp:

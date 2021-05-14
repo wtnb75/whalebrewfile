@@ -3,6 +3,7 @@ RUN apk add alpine-sdk sudo atools abuild-doc mandoc ccache
 RUN adduser -S -G abuild packager
 ADD sudoers.packager /etc/sudoers.d/packager
 ADD entrypoint.sh /entrypoint.sh
+ADD apk-index.sh /usr/local/bin/apk-index
 RUN sed -i -e 's,#PACKAGER=.*$,PACKAGER="Watanabe Takashi <wtnb75@gmail.com>",g;' /etc/abuild.conf
 RUN install -d -o root -g abuild -m 0777 /var/cache/distfiles
 USER packager
