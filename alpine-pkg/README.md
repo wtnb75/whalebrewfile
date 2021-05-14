@@ -21,6 +21,8 @@
     - alpine-pkg abuild -r
 - sign
     - alpine-pkg abuild-sign /home/packager/packages/x86_64/APKINDEX.tar.gz
+- create index
+    - alpine-pkg apk-index
 
 # Install packages
 
